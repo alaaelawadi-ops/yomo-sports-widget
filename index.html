@@ -50,7 +50,7 @@
       var tr = el('tr');
       tr.appendChild(el('td', 'rank', r.intRank));
       var td = el('td', 'team'), d = el('div', 'tm');
-      if (r.strBadge) { var img = el('img'); img.src = r.strBadge + '/tiny'; img.alt = ''; d.appendChild(img); }
+      if (r.strBadge) { var img = el('img'); img.src = r.strBadge; img.alt = ''; d.appendChild(img); }
       d.appendChild(el('span', null, r.strTeam));
       td.appendChild(d); tr.appendChild(td);
       [r.intPlayed, r.intWin, r.intDraw, r.intLoss, r.intGoalDifference].forEach(function (v) { tr.appendChild(el('td', null, v)); });
